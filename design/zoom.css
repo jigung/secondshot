@@ -1,0 +1,100 @@
+.zoom_box .photo img,
+.zoom_box .desc {
+  transition: all 0.3s ease-in-out;
+}
+.zoom_box .photo img {
+  transform: scale(1);
+}
+.zoom_box:hover .photo img {
+  transform: scale(1.15);
+}
+.zoom_box .desc {
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+  opacity: 0;
+  transform: scale(1.15);
+}
+.zoom_box .desc_wrap {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.zoom_box:hover .desc {
+  opacity: 1;
+  transform: scale(1);
+}
+.zoom_box .desc .desc_img img {
+  max-width: 30% !important;
+  padding-bottom: 15px;
+}
+.zoom_box .desc .desc_txt {
+  padding: 0 40px;
+  font-size: 26px;
+  line-height: 30px;
+  color: #fff;
+}
+#Content .zoom_box .photo img {
+  max-width: 100.1%;
+}
+.zoom_box {
+  position: relative;
+  line-height: 0;
+  overflow: hidden;
+  display: inline-block;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+}
+.if-zoom .image_frame .image_wrapper .image_links {
+  display: none;
+}
+.if-zoom .image_frame:not(.no_link) .image_wrapper img:not(.ls-l) {
+  margin-bottom: 0 !important;
+}
+.if-zoom .image_frame:hover .image_wrapper img,
+.if-zoom .image_frame.hover .image_wrapper img {
+  top: 0;
+}
+.if-zoom .image_frame .image_wrapper .mask {
+  display: none;
+}
+.if-zoom .image_frame:hover .image_wrapper img,
+.if-zoom .image_frame.hover .image_wrapper img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.imgzoom img :hover {
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.if-zoom .image_frame.no_link:hover .image_wrapper img,
+.if-zoom image_frame.no_link.hover .image_wrapper img {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.if-zoom #Content .image_frame .image_wrapper img {
+  max-width: 100.1%;
+}
+.if-disable .image_frame .image_wrapper .image_links {
+  display: none;
+}
+.if-disable .image_frame:not(.no_link) .image_wrapper img:not(.ls-l) {
+  margin-bottom: 0 !important;
+}
+.if-disable .image_frame:hover .image_wrapper img,
+.if-zoom .image_frame.hover .image_wrapper img {
+  top: 0;
+}

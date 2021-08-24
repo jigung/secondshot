@@ -1,0 +1,163 @@
+:root {
+  /* 로고 색상 */
+  --logoColor: #f3a42c;
+  /* 텍스트 색상 */
+  --textColor: #000000;
+
+  --mouseOverColor: #f3a42c;
+}
+
+body {
+  margin: 0;
+}
+
+.navbar-menu {
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  font-family: "마루 부리 beta";
+}
+
+.navbar-logo > a {
+  display: inherit;
+  align-items: center;
+  text-decoration: none;
+}
+.navbar-logo > a > i {
+  padding: 0px 5px;
+  color: var(--logoColor);
+}
+/*navbar 로고 스타일*/
+.navbar-logo > a > h1 {
+  margin: 0;
+  color: var(--textColor);
+  font-family: "마루 부리 beta";
+  font-size: 23px;
+}
+
+.navbar-menu {
+  align-items: center;
+  align-content: center;
+  margin-bottom: 0;
+  text-align: right;
+}
+/*navbar 로고 스타일*/
+.navbar-menu > ul {
+  display: flex;
+  list-style: none;
+  font-size: 17px;
+  font-family: "S-CoreDream-3Light";
+  align-items: center;
+  padding-left: 170px;
+  padding-right: 90px;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.navbar-menu li {
+  padding: 8px 12px;
+  margin-right: 20px;
+}
+
+.navbar-menu li:hover > a {
+  color: #333333bb;
+  border-color: #f3a42c;
+}
+
+.navbar-menu ul:hover {
+  color: #f3a42c;
+}
+
+.navbar-menu li > a {
+  text-decoration: none;
+  color: var(--textColor);
+  height: 30px;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links a {
+  padding: 8px 12px;
+  color: var(--textColor);
+}
+
+.navbar-btn {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1035px) {
+  .navbar-menu > ul {
+    display: flex;
+    list-style: none;
+    font-size: 16px;
+    font-family: "NEXON Lv1 Gothic OTF";
+    align-items: center;
+    padding-left: 200px;
+    padding-right: 90px;
+    margin-bottom: 0;
+    letter-spacing: 1.5px;
+    text-align: center;
+    position: relative;
+    left: 85px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar-logo > a {
+    padding: 5px 10px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .navbar-menu {
+    display: none;
+    text-align: center;
+    align-items: center;
+  }
+
+  .navbar-menu > ul {
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navbar-menu > ul > li {
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+  }
+
+  .navbar-links {
+    display: none;
+    justify-content: center;
+    padding: 8px 12px;
+  }
+
+  .navbar-btn {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    font-size: 25px;
+    color: var(--textColor);
+  }
+
+  .active {
+    display: flex;
+  }
+}
